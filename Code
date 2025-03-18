@@ -1,21 +1,15 @@
-def sumar(a, b):
-    return a + b
+def suma (a, b):
+def resta (a, b):
+def multuplicación (a, b):
+def división (a, b):
 
-def restar(a, b):
-    return a - b
 
-def multiplicar(a, b):
-    return a * b
+# Blucle Principal
+while True:
+    print ("1.- Suma")
+    print ("2.- Resta")
+    print ("3.- Multiplicación")
+    print ("4.- División")
+    print ("5.- Salir")
 
-def dividir(a, b):
-    if b == 0:
-        return "Error: División por cero"
-    return a / b
-
-def mostrar_menu():
-    print("Operaciones disponibles:")
-    print("1. Sumar")
-    print("2. Restar")
-    print("3. Multiplicar")
-    print("4. Dividir")
-    print("5. Salir")
+    opcion = str(input("Elije un numero (1 al 5)"))
