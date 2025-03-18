@@ -28,7 +28,7 @@ while True:
                     print(resultado)
                 except ZeroDivisionError:
                     print("No se puede dividir entre 0")
-                div(x,y)
+            div(x,y)
 
     except ValueError:
         pass
