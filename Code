@@ -1,24 +1,34 @@
-sumar(a, b):
-    return a + b
-
-restar(a, b):
-    return a - b
-
-multiplicar(a, b):
-    return a * b
-
-dividir(a, b):
-    if b == 0:
-        return "Error: División por cero"
-    return a / b
-
-#Bucle
 while True:
-    print("Operaciones disponibles:")
-    print("1. Sumar")
-    print("2. Restar")
-    print("3. Multiplicar")
-    print("4. Dividir")
-    print("5. Salir")
+    try:
+        x = float(input("Numero 1: "))
+        y = float(input("Numero 2: "))
+        Accion =  int(input("1. Suma"'\n'
+                            "2. Resta"'\n'
+                            "3. Multi"'\n'
+                            "4. Div"'\n'))
+        if Accion == 1:
+            def suma(x, y):
+                resultado = x + y
+                print(resultado)
+            suma(x,y)
+        if Accion == 2:
+            def resta (x,y):
+                resulado = x - y
+                print(resulado)
+            resta(x,y)
+        if Accion == 3:
+            def multi(x,y):
+                resultado = x * y
+                print(resultado)
+            multi(x,y)
+        if Accion == 4:
+            def div(x,y):
+                try:
+                    resultado = x/y
+                    print(resultado)
+                except ZeroDivisionError:
+                    print("No se puede dividir entre 0")
+                div(x,y)
 
-    Action =int(input("Opción:"))
+    except ValueError:
+        pass
